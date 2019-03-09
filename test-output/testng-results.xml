@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3864" started-at="2019-03-09T06:28:46Z" finished-at="2019-03-09T06:28:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3864" started-at="2019-03-09T06:28:46Z" finished-at="2019-03-09T06:28:49Z">
+      <class name="com.w2a.API_Batch3.testCases.TestCreateCustomerAPI">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@43195e57]" name="beforeSuite" is-config="true" duration-ms="517" started-at="2019-03-09T06:28:45Z" finished-at="2019-03-09T06:28:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@43195e57]" name="beforeClass" is-config="true" duration-ms="5" started-at="2019-03-09T06:28:46Z" finished-at="2019-03-09T06:28:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@43195e57]" name="beforeMethod" is-config="true" duration-ms="13" started-at="2019-03-09T06:28:46Z" finished-at="2019-03-09T06:28:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.w2a.API_Batch3.testCases.TestCreateCustomerAPI.validateCreateCustomerAPIWithValidData()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateCreateCustomerAPIWithValidData()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@43195e57]" name="validateCreateCustomerAPIWithValidData" duration-ms="3448" started-at="2019-03-09T06:28:46Z" finished-at="2019-03-09T06:28:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPIWithValidData -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@43195e57]" name="afterMethod" is-config="true" duration-ms="382" started-at="2019-03-09T06:28:49Z" finished-at="2019-03-09T06:28:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateCreateCustomerAPIWithValidData status=SUCCESS method=TestCreateCustomerAPI.validateCreateCustomerAPIWithValidData()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@43195e57] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateCustomerAPI@43195e57]" name="afterSuite" is-config="true" duration-ms="4" started-at="2019-03-09T06:28:49Z" finished-at="2019-03-09T06:28:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.w2a.API_Batch3.testCases.TestCreateCustomerAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
