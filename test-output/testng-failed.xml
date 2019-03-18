@@ -6,7 +6,7 @@
       <class name="com.w2a.API_Batch3.testCases.TestCreateCustomerAPI">
         <methods>
           <include name="beforeClass"/>
-          <include name="validateCreateCustomerAPIWithValidData"/>
+          <include name="parseJsonUsingPath"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>

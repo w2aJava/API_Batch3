@@ -27,7 +27,7 @@ public class APISetUp {
 	protected static ConfigProperty configProperty;
 
 	public static ExcelReader excel = new ExcelReader(
-			System.getProperty("user.dir") + "/src/test/resources/testData/TestData.xlsx");
+			System.getProperty("user.dir") + "/src/test/resources/testData/TestData_1.xlsx");
 
 	public static ExtentReports extentReport;
 	public static ThreadLocal<ExtentTest> classLevelLog = new ThreadLocal<ExtentTest>();
