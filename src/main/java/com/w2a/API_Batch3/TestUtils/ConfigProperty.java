@@ -23,6 +23,8 @@ public interface ConfigProperty extends Config{
 	@Key("testReportName")
 	String getTestReportName();
 	
+	@Key("testDataSheetName")
+	String getTestDataSheetName();
 	
 
 }

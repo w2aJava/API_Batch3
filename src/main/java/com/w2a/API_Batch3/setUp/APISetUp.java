@@ -18,8 +18,10 @@ import com.aventstack.extentreports.ExtentTest;
 import com.w2a.API_Batch3.TestUtils.ConfigProperty;
 import com.w2a.API_Batch3.TestUtils.ExcelReader;
 import com.w2a.API_Batch3.TestUtils.Extentmanager;
+import com.w2a.API_Batch3.TestUtils.TestUtil;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
 public class APISetUp {
@@ -27,7 +29,7 @@ public class APISetUp {
 	protected static ConfigProperty configProperty;
 
 	public static ExcelReader excel = new ExcelReader(
-			System.getProperty("user.dir") + "/src/test/resources/testData/TestData_1.xlsx");
+			System.getProperty("user.dir") + "/src/test/resources/testData/API_TestData.xlsx");
 
 	public static ExtentReports extentReport;
 	public static ThreadLocal<ExtentTest> classLevelLog = new ThreadLocal<ExtentTest>();
@@ -93,6 +95,7 @@ public class APISetUp {
 
 		RequestSpecification spec = given().auth().basic(configProperty.getSecretKey(), "");
 
+		//TestUtil.setFormParam(arguments, reqSpecs)
 		testLevelLog.get().info("Request Specification set");
 		// ArrayList<String> list = new ArrayList<String>();
 		return spec;
