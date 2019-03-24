@@ -1,99 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="4086" started-at="2019-03-23T06:37:28Z" finished-at="2019-03-23T06:37:32Z">
+  <suite name="Suite" duration-ms="3450" started-at="2019-03-24T06:05:32Z" finished-at="2019-03-24T06:05:35Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="4086" started-at="2019-03-23T06:37:28Z" finished-at="2019-03-23T06:37:32Z">
-      <class name="com.w2a.API_Batch3.testCases.TestCustomerAPI">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCustomerAPI@5119fb47]" name="beforeSuite" is-config="true" duration-ms="509" started-at="2019-03-23T06:37:27Z" finished-at="2019-03-23T06:37:28Z">
+    <test name="Test" duration-ms="3450" started-at="2019-03-24T06:05:32Z" finished-at="2019-03-24T06:05:35Z">
+      <class name="com.w2a.API_Batch3.testCases.TestCreateUserAPI">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateUserAPI@188715b5]" name="beforeSuite" is-config="true" duration-ms="694" started-at="2019-03-24T06:05:31Z" finished-at="2019-03-24T06:05:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCustomerAPI@5119fb47]" name="beforeClass" is-config="true" duration-ms="5" started-at="2019-03-23T06:37:28Z" finished-at="2019-03-23T06:37:28Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateUserAPI@188715b5]" name="beforeClass" is-config="true" duration-ms="5" started-at="2019-03-24T06:05:32Z" finished-at="2019-03-24T06:05:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCustomerAPI@5119fb47]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2019-03-23T06:37:28Z" finished-at="2019-03-23T06:37:28Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateUserAPI@188715b5]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2019-03-24T06:05:32Z" finished-at="2019-03-24T06:05:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.w2a.API_Batch3.testCases.TestCustomerAPI.validateCreateCustomerAPIWithValidData(java.util.Hashtable)]]>
+                <![CDATA[public void com.w2a.API_Batch3.testCases.TestCreateUserAPI.validateCreateUserAPIWithValidData(java.util.Hashtable)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="validateCreateCustomerAPIWithValidData(java.util.Hashtable)[pri:1, instance:com.w2a.API_Batch3.testCases.TestCustomerAPI@5119fb47]" name="validateCreateCustomerAPIWithValidData" duration-ms="3702" started-at="2019-03-23T06:37:28Z" data-provider="dp" finished-at="2019-03-23T06:37:32Z">
+        <test-method status="PASS" signature="validateCreateUserAPIWithValidData(java.util.Hashtable)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateUserAPI@188715b5]" name="validateCreateUserAPIWithValidData" duration-ms="2977" started-at="2019-03-24T06:05:32Z" data-provider="dp" finished-at="2019-03-24T06:05:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{expectedStatusCode=200, arguments=email:testing@yahoo.co.in,description:Test user is creating a customer is stripr database,account_balance:10000, expectedEmail=testing@yahoo.co.in, endpoint=customers}]]>
+                <![CDATA[{name=Rahul Arora, job=Selenium Master}]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Created] but found [HTTP/1.1 200 OK]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Created] but found [HTTP/1.1 200 OK]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.w2a.API_Batch3.testCases.TestCustomerAPI.validateCreateCustomerAPIWithValidData(TestCustomerAPI.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateCustomerAPIWithValidData -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCustomerAPI@5119fb47]" name="afterMethod" is-config="true" duration-ms="338" started-at="2019-03-23T06:37:32Z" finished-at="2019-03-23T06:37:32Z">
+        </test-method> <!-- validateCreateUserAPIWithValidData -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateUserAPI@188715b5]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-03-24T06:05:35Z" finished-at="2019-03-24T06:05:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateCreateCustomerAPIWithValidData status=FAILURE method=TestCustomerAPI.validateCreateCustomerAPIWithValidData(java.util.Hashtable)[pri:1, instance:com.w2a.API_Batch3.testCases.TestCustomerAPI@5119fb47] output={null}]]]>
+                <![CDATA[[TestResult name=validateCreateUserAPIWithValidData status=SUCCESS method=TestCreateUserAPI.validateCreateUserAPIWithValidData(java.util.Hashtable)[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateUserAPI@188715b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCustomerAPI@5119fb47]" name="afterSuite" is-config="true" duration-ms="3" started-at="2019-03-23T06:37:32Z" finished-at="2019-03-23T06:37:32Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.w2a.API_Batch3.testCases.TestCreateUserAPI@188715b5]" name="afterSuite" is-config="true" duration-ms="1" started-at="2019-03-24T06:05:35Z" finished-at="2019-03-24T06:05:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.w2a.API_Batch3.testCases.TestCustomerAPI -->
+      </class> <!-- com.w2a.API_Batch3.testCases.TestCreateUserAPI -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

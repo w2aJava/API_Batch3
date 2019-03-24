@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.w2a.API_Batch3.testCases.TestCustomerAPI" hash-for-method="validateCreateCustomerAPIWithValidData({expectedStatusCode=200, arguments=email:testing@yahoo.co.in,description:Test user is creating a cus...)">validateCreateCustomerAPIWithValidData({expectedStatusCode=200, arguments=email:testing@yahoo.co.in,description:Test user is creating a cus...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.w2a.API_Batch3.testCases.TestCreateUserAPI" hash-for-method="validateCreateUserAPIWithValidData({name=Rahul Arora, job=Selenium Master})">validateCreateUserAPIWithValidData({name=Rahul Arora, job=Selenium Master})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,26 +117,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.w2a.API_Batch3.testCases.TestCustomerAPI</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.w2a.API_Batch3.testCases.TestCreateUserAPI</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateCreateCustomerAPIWithValidData({expectedStatusCode=200, arguments=email:testing@yahoo.co.in,description:Test user is creating a cus...)">
-                  </a> <!-- validateCreateCustomerAPIWithValidData({expectedStatusCode=200, arguments=email:testing@yahoo.co.in,description:Test user is creating a cus...) -->
-                  <span class="method-name">validateCreateCustomerAPIWithValidData</span>
-                  <span class="parameters">({expectedStatusCode=200, arguments=email:testing@yahoo.co.in,description:Test user is creating a customer is stripr database,account_balance:10000, expectedEmail=testing@yahoo.co.in, endpoint=customers})</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Created] but found [HTTP/1.1 200 OK]
-	at com.w2a.API_Batch3.testCases.TestCustomerAPI.validateCreateCustomerAPIWithValidData(TestCustomerAPI.java:35)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="validateCreateUserAPIWithValidData({name=Rahul Arora, job=Selenium Master})">
+                  </a> <!-- validateCreateUserAPIWithValidData({name=Rahul Arora, job=Selenium Master}) -->
+                  <span class="method-name">validateCreateUserAPIWithValidData</span>
+                  <span class="parameters">({name=Rahul Arora, job=Selenium Master})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -147,9 +143,13 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.w2a.API_Batch3.listeners.CustomListeners&quot;/&gt;
+    &lt;listener class-name=&quot;com.w2a.API_Batch3.listeners.RetryTransformer&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.w2a.API_Batch3.testCases.TestCustomerAPI&quot;/&gt;
+      &lt;class name=&quot;com.w2a.API_Batch3.testCases.TestCreateUserAPI&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -191,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateCreateCustomerAPIWithValidData')
-data.setCell(0, 2, 'com.w2a.API_Batch3.testCases.TestCustomerAPI')
-data.setCell(0, 3, 3702);
+data.setCell(0, 1, 'validateCreateUserAPIWithValidData')
+data.setCell(0, 2, 'com.w2a.API_Batch3.testCases.TestCreateUserAPI')
+data.setCell(0, 3, 2977);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -224,32 +224,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.w2a.API_Batch3.testCases.TestCustomerAPI</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.w2a.API_Batch3.testCases.TestCreateUserAPI</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">516 ms</span>
+                <span class="method-start">706 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.w2a.API_Batch3.testCases.TestCustomerAPI.validateCreateCustomerAPIWithValidData(java...)</span>
-                <span class="method-start">539 ms</span>
+                <span class="method-name">beforeMethod(public void com.w2a.API_Batch3.testCases.TestCreateUserAPI.validateCreateUserAPIWithValidData(java.u...)</span>
+                <span class="method-start">733 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validateCreateCustomerAPIWithValidData({expectedStatusCode=200, arguments=email:testing@yahoo.co.in,description:Test user is creating a cus...)</span>
-                <span class="method-start">551 ms</span>
+                <span class="method-name">validateCreateUserAPIWithValidData({name=Rahul Arora, job=Selenium Master})</span>
+                <span class="method-start">735 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=validateCreateCustomerAPIWithValidData status=FAILURE method=TestCustomerAPI.valida...)</span>
-                <span class="method-start">4256 ms</span>
+                <span class="method-name">afterMethod([TestResult name=validateCreateUserAPIWithValidData status=SUCCESS method=TestCreateUserAPI.validate...)</span>
+                <span class="method-start">4143 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">4627 ms</span>
+                <span class="method-start">4171 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

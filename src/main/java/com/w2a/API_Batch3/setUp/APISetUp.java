@@ -34,6 +34,7 @@ public class APISetUp {
 	public static ExtentReports extentReport;
 	public static ThreadLocal<ExtentTest> classLevelLog = new ThreadLocal<ExtentTest>();
 	public static ThreadLocal<ExtentTest> testLevelLog = new ThreadLocal<ExtentTest>();
+	public static ExtentTest test=null;
 
 	@BeforeSuite
 	public void beforeSuite() {
@@ -56,19 +57,21 @@ public class APISetUp {
 
 	@BeforeMethod
 	public void beforeMethod(Method method) {
+		 test = classLevelLog.get().createNode(method.getName());
+		testLevelLog.set(test);
 
-		ExtentTest test = classLevelLog.get().createNode(method.getName());
+		/*ExtentTest test = classLevelLog.get().createNode(method.getName());
 		testLevelLog.set(test);
 		testLevelLog.get().info("Test Case:- " + method.getName() + " execution started");
 
 		// System.out.println("Test Case :- " + method.getName() + " execution
 		// started");
-
+*/
 	}
 
 	@AfterMethod
 	public void afterMethod(ITestResult result) {
-
+/*
 		if (result.getStatus() == ITestResult.SUCCESS) {
 			testLevelLog.get().pass("Test Case passed");
 			System.out.println("This Test cases is passed");
@@ -80,15 +83,12 @@ public class APISetUp {
 			System.out.println("Test Case is skipped");
 		}
 
-		extentReport.flush();
+		extentReport.flush();*/
 	}
 
 	@AfterSuite
 	public void afterSuite() {
-		configProperty = ConfigFactory.create(ConfigProperty.class);
-
-		RestAssured.baseURI = configProperty.getBaseURI();
-		RestAssured.basePath = configProperty.getBasePath();
+	
 	}
 
 	public static RequestSpecification setRequestSpecification() {
