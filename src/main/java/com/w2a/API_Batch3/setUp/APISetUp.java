@@ -43,9 +43,11 @@ public class APISetUp {
 
 		RestAssured.baseURI = configProperty.getBaseURI();
 		RestAssured.basePath = configProperty.getBasePath();
+		TestUtil.archiveTestReport();
 		extentReport = Extentmanager
 				.GetExtent(configProperty.getTestReportFilepath() + configProperty.getTestReportName());
 
+	
 	}
 
 	@BeforeClass
