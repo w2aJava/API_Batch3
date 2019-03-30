@@ -1,0 +1,14 @@
+com\w2a\API_Batch3\listeners\CustomListeners.class
+com\w2a\API_Batch3\setUp\APISetUp.class
+com\w2a\API_Batch3\Rough\ROugh.class
+com\w2a\API_Batch3\TestUtils\ConfigProperty.class
+com\w2a\API_Batch3\TestUtils\Extentmanager.class
+com\w2a\API_Batch3\TestUtils\TestUtil.class
+com\w2a\API_Batch3\listeners\RetryTransformer.class
+com\w2a\API_Batch3\Rough\Test.class
+com\w2a\API_Batch3\listeners\RetryListeners.class
+com\w2a\API_Batch3\POJO\User.class
+com\w2a\API_Batch3\TestUtils\ExcelReader.class
+com\w2a\API_Batch3\TestUtils\CommonVariables.class
+com\w2a\API_Batch3\TestUtils\DataProviderClass.class
+com\w2a\API_Batch3\API\CustomerAPI.class

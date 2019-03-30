@@ -1,0 +1,3 @@
+com\w2a\API_Batch3\testCases\TestCreateInvoiceAPI.class
+com\w2a\API_Batch3\testCases\TestCreateUserAPI.class
+com\w2a\API_Batch3\testCases\TestCustomerAPI.class
