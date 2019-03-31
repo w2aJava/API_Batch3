@@ -29,20 +29,21 @@ public class TestUtil extends APISetUp {
 	}
 
 	public static void archiveTestReport() {
-		try {
-			String reportName = "TestReport.html";
+		
+			String reportName = configProperty.getTestReportName();
 
-			String lastTestReportFilePath = "src/test/resources/testReports/";
-			String archiveReportPath = "src/test/resources/archivedTestReport/";
+			String lastTestReportFilePath = System.getProperty("user.dir")+"/src/test/resources/testReports/";
+			String archiveReportPath = System.getProperty("user.dir")+"/src/test/resources/archivedTestReport/";
 
 			Date date = new Date();
-			SimpleDateFormat dateFormate = new SimpleDateFormat("dd_MM_yyyy:hh_mm_ss");
+			SimpleDateFormat dateFormate = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 			String formatedDate = dateFormate.format(date);
-			String archiveTestReportName = formatedDate + ":" + reportName;
+			String archiveTestReportName = formatedDate + "_" + reportName;
 
 			File oldReport = new File(lastTestReportFilePath + reportName);
 
 			File newFile = new File(archiveReportPath + archiveTestReportName);
+			
 			System.out.println(oldReport.exists());
 			
 			if (oldReport.exists()) {
@@ -50,9 +51,7 @@ public class TestUtil extends APISetUp {
 				oldReport.renameTo(newFile);
 				oldReport.delete();
 			}
-		} catch (Exception e) {
-
-		}
+		
 
 	}
 

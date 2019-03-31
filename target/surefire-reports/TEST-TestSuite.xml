@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="2.74" tests="3" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="2.77" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="E:\Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3275817986423223999.tmp"/>
+    <property name="classworlds.conf" value="E:\Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5780162935392486537.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;E:\Softwares\eclipse-java-neon-3-win32-x86_64\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,7 +60,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="validateCreateUserAPIWithValidData" classname="com.w2a.API_Batch3.testCases.TestCreateUserAPI" time="2.74"/>
-  <testcase name="validateCreateUserAPIWithValidData" classname="com.w2a.API_Batch3.testCases.TestCreateUserAPI" time="0.641"/>
-  <testcase name="validateCreateUserAPIWithValidData" classname="com.w2a.API_Batch3.testCases.TestCreateUserAPI" time="0.835"/>
+  <testcase name="validateCreateUserAPIWithValidData" classname="com.w2a.API_Batch3.testCases.TestCreateUserAPI" time="2.77"/>
+  <testcase name="validateCreateUserAPIWithValidData" classname="com.w2a.API_Batch3.testCases.TestCreateUserAPI" time="0.833"/>
+  <testcase name="validateCreateUserAPIWithValidData" classname="com.w2a.API_Batch3.testCases.TestCreateUserAPI" time="0.824"/>
 </testsuite>
